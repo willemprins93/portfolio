@@ -1,0 +1,88 @@
+.about {
+  margin: 100px auto 0;
+  max-width: 500px;
+  transition: all 0.5s ease-in-out;
+}
+
+.about:hover {
+  z-index: 1000;
+  margin: 50px auto 0;
+  max-width: 700px;
+  box-shadow: 0px 20px 200px -80px rgba(0, 0, 0, 0.75);
+}
+
+.about:hover .extra-text {
+  visibility: visible;
+  opacity: 1;
+  font-size: 1em;
+}
+
+.about:hover .about-text {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+.about:hover .about-img {
+  border-radius: 0% !important;
+  margin: 0;
+  padding: 0;
+}
+
+.about:hover h1 {
+  font-size: 85px;
+}
+
+.about-img {
+  max-width: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.about-info h1 {
+  line-height: 1;
+  padding: 20px 0 20px 30px;
+  margin: 0;
+  max-width: 200px;
+  display: block;
+  text-align: left;
+  font-size: 65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-text {
+  margin: 0;
+  padding: 30px;
+  display: block;
+  background-color: #ebcc34;
+}
+
+.extra-text {
+  visibility: hidden;
+  font-size: 1px;
+  opacity: 0;
+  margin: -30px 0 0 0;
+  padding: 25px 30px 30px 30px;
+  display: block;
+  text-align: left;
+  background-color: #f0d862;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    margin: 50px auto 0;
+    max-width: 400px;
+    transition: all 0.5s ease-in-out;
+  }
+}
